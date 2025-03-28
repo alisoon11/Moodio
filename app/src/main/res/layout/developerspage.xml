@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DevelopersActivity"
+    android:background="@drawable/gradientbackground">
+
+
+    <!-- Title Section (Centered) -->
+    <TextView
+        android:id="@+id/developersTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meet the Developers"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+
+    <!-- Developer 1 Section (Centered) -->
+    <LinearLayout
+        android:id="@+id/developer1Layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/developersTitle"
+        android:layout_marginTop="32dp">
+
+
+        <ImageView
+            android:id="@+id/developer1Image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/deve1"
+            android:contentDescription="Developer 1 Image"
+            android:layout_gravity="center"/>
+
+        <!-- Developer 1 Info -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/developer1Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edzel Señor"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/developer1Role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Role: Mobile Developer"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/developer1Bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An IT Student in CIT."
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Developer 2 Section (Centered) -->
+    <LinearLayout
+        android:id="@+id/developer2Layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/developer1Layout"
+        android:layout_marginTop="32dp">
+
+        <!-- Developer 2 Image -->
+        <ImageView
+            android:id="@+id/developer2Image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/deve2"
+            android:contentDescription="Developer 2 Image"
+            android:layout_gravity="center"/>
+
+        <!-- Developer 2 Info -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/developer2Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sharaine  Salutan"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/developer2Role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Role: Mobile Developer"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/developer2Bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An IT Student in CIT."
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="32dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
